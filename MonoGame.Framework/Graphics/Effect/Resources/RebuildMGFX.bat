@@ -12,3 +12,4 @@ SET TWOMGFX="..\..\..\..\Tools\bin\Windows\2mgfx.exe"
 )
 
 endlocal
+pause
