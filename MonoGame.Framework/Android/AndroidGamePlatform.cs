@@ -218,7 +218,7 @@ namespace Microsoft.Xna.Framework
                 Window.Pause();
 				Window.ClearFocus();
                 Sound.PauseAll();
-                MediaPlayer.Pause();
+                MediaPlayer.Stop();
             }
         }
 
