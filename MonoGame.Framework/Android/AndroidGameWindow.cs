@@ -230,7 +230,7 @@ namespace Microsoft.Xna.Framework
         /// aspect ratio of PreferredBackBufferWidth / PreferredBackBufferHeight
         /// </summary>
         /// <returns></returns>
-        internal DisplayOrientation GetEffectiveSupportedOrientations()
+        public DisplayOrientation GetEffectiveSupportedOrientations()
         {
             if (supportedOrientations == DisplayOrientation.Default)
             {
@@ -256,7 +256,7 @@ namespace Microsoft.Xna.Framework
         /// <summary>
         /// Updates the screen orientation. Filters out requests for unsupported orientations.
         /// </summary>
-        internal void SetOrientation(DisplayOrientation newOrientation, bool applyGraphicsChanges)
+        public void SetOrientation(DisplayOrientation newOrientation, bool applyGraphicsChanges)
         {
             DisplayOrientation supported = GetEffectiveSupportedOrientations();
 

@@ -40,6 +40,8 @@ namespace Microsoft.Xna.Framework.Graphics
                 return PssVertexFormat.Float3;
             case VertexElementFormat.Color:
                 return PssVertexFormat.UByte4N;
+            case VertexElementFormat.Vector2:
+                return PssVertexFormat.Float2;
             default:
 #warning Plenty more formats still to implement
                 throw new NotImplementedException();

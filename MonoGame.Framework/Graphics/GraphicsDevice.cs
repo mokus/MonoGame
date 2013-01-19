@@ -1909,7 +1909,7 @@ namespace Microsoft.Xna.Framework.Graphics
             }
 
 #elif OPENGL
-
+            
             ApplyState(true);
 
             // Unbind current VBOs.
@@ -1934,6 +1934,18 @@ namespace Microsoft.Xna.Framework.Graphics
 
             // Release the handles.
             vbHandle.Free();
+#elif PSM
+            VertexBuffer vertexBuffer = new VertexBuffer(
+                this,
+                vertexDeclaration,
+                GetElementCountArray(primitiveType, primitiveCount),
+                BufferUsage.WriteOnly
+            );
+            vertexBuffer.SetData(vertexData);
+            SetVertexBuffer(vertexBuffer);
+
+            BindVertexBuffer(true);
+            _graphics.DrawArrays(PSSHelper.ToDrawMode(primitiveType), vertexOffset, GetElementCountArray(primitiveType, primitiveCount));
 #endif
         }
 
