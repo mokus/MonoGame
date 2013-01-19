@@ -181,7 +181,7 @@ namespace Microsoft.Devices.Sensors
                                 reading.Timestamp = DateTime.Now;
                                 accelerometer.CurrentValue = reading;
                             }
-                            accelerometer.FireOnCurrentValueChanged(this, new SensorReadingEventArgs<AccelerometerReading>(reading));
+                            accelerometer.CurrentValue = reading;
                         }
                         finally
                         {
