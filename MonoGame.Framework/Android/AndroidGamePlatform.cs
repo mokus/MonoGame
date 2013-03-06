@@ -203,7 +203,7 @@ namespace Microsoft.Xna.Framework
                 IsActive = true;
                 Window.Resume();
                 Sound.ResumeAll();
-                MediaPlayer.Resume();
+//                MediaPlayer.Resume();
 				if(!Window.IsFocused)
 		           Window.RequestFocus();
             }
@@ -218,7 +218,7 @@ namespace Microsoft.Xna.Framework
                 Window.Pause();
 				Window.ClearFocus();
                 Sound.PauseAll();
-                MediaPlayer.Pause();
+                MediaPlayer.Stop();
             }
         }
 

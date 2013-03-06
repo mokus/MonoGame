@@ -13,7 +13,7 @@ using Android.Widget;
 
 namespace Microsoft.Xna.Framework
 {
-    internal class OrientationListener : OrientationEventListener
+    public class OrientationListener : OrientationEventListener
     {
         AndroidGameActivity activity;
         private bool inprogress = false;

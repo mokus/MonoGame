@@ -32,7 +32,7 @@ namespace Microsoft.Xna.Framework
 		protected override void OnCreate (Bundle savedInstanceState)
 		{
 			base.OnCreate (savedInstanceState);
-			o = new OrientationListener(this);	
+			o = CreateOrientationListener();	
 			if (o.CanDetectOrientation())
 			{
 				o.Enable();				
@@ -48,6 +48,12 @@ namespace Microsoft.Xna.Framework
 
             RequestWindowFeature(WindowFeatures.NoTitle);
 		}
+
+        protected virtual OrientationListener CreateOrientationListener()
+        {
+            return new OrientationListener(this);
+        }
+
 
         public static event EventHandler Paused;
 

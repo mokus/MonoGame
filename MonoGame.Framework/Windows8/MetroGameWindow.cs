@@ -1,7 +1,7 @@
-﻿#region License
+#region License
 /*
 Microsoft Public License (Ms-PL)
-XnaTouch - Copyright © 2009 The XnaTouch Team
+XnaTouch - Copyright � 2009 The XnaTouch Team
 
 All rights reserved.
 
