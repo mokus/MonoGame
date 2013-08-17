@@ -190,7 +190,7 @@ namespace Microsoft.Xna.Framework.Graphics
 #endif
         
 #if PSM
-        internal VertexFormat[] GetVertexFormat()
+        public VertexFormat[] GetVertexFormat()
         {
             if (_vertexFormat == null)
             {

@@ -150,7 +150,7 @@ namespace Microsoft.Xna.Framework.Content
                 if (MetroHelper.AppDataFileExists(fileNamePlusExt))
                     return fileNamePlusExt;
 #else
-			    if (File.Exists(fileNamePlusExt))
+			    if (File.Exists(Path.Combine(TitleContainer.Location, fileNamePlusExt)))
 				    return fileNamePlusExt;
 #endif
             }

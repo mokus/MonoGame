@@ -380,7 +380,7 @@ namespace Microsoft.Xna.Framework.Graphics
 
             DirectionalLight0.Enabled = true;
             SpecularColor = Vector3.One;
-            SpecularPower = 16;
+            //SpecularPower = 16;
         }
 
         /// <summary>
